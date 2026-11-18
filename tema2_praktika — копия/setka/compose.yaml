@@ -1,0 +1,8 @@
+
+services:
+  setka:
+    build: .
+    container_name: setka
+    command: ["python", "-m", "src.main"]
+    volumes:
+      - ./data:/app/data
